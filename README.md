@@ -5,11 +5,11 @@ A library that simplifies working with Blogger feeds (jQuery is required)
 ## add it to you blog
 copy and paste the script tag into your HTML file
 ``` html
-<script src="https://cdn.jsdelivr.net/gh/mostafa/blogger-fetcher@1.0.0/dist/bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/mostapha/blogger-fetcher@1.0.0/dist/bundle.min.js" crossorigin="anonymous"></script>
 ```
 and to support old browsers use this script instead (just this one and not both)
 ``` html
-<script src="https://cdn.jsdelivr.net/gh/mostafa/blogger-fetcher@1.0.0/dist/bundle-legacy.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/mostapha/blogger-fetcher@1.0.0/dist/bundle-legacy.min.js" crossorigin="anonymous"></script>
 ```
 
 ## How to use
