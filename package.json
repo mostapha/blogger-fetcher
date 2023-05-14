@@ -1,0 +1,36 @@
+{
+  "name": "blogger-fetcher",
+  "version": "1.0",
+  "description": "get Blogger posts with ease",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "dev": "webpack --mode=development",
+    "watch": "webpack --watch",
+    "build:modern": "cross-env BUILD_NAME=modern webpack --mode=production --node-env=production",
+    "build:legacy": "cross-env BUILD_NAME=legacy webpack --mode=production --node-env=production",
+    "terser:modern": "terser dist/bundle.js --config-file=terser.config.json --output=dist/bundle.min.js",
+    "terser:legacy": "terser dist/bundle-legacy.js --config-file=terser.config.json --output=dist/bundle-legacy.min.js"
+  },
+  "type": "module",
+  "keywords": ["Blogger"],
+  "author": "Mustapha Bouh",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "~7.14.8",
+    "@babel/core": "~7.15.0",
+    "@babel/preset-env": "~7.15.0",
+    "@types/jquery": "^3.5.16",
+    "@webpack-cli/generators": "^3.0.2",
+    "babel-loader": "~9.1.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.39.0",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "core-js": "~3.27.2"
+  }
+}

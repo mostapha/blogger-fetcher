@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+.vscode
+.idea
+dist/bundle.js
+dist/bundle-legacy.js
+types
+.eslintrc.cjs
+tester-app
