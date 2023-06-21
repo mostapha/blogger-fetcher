@@ -116,7 +116,7 @@ const prepareParamsFromConfig = ({ label, labels, superCates, maxResults, startI
     }
   }
 
-  if (maxResults && isNumber(maxResults) && maxResults >= 0) {
+  if (maxResults !== undefined && isNumber(maxResults) && maxResults >= 0) {
     userConfig['max-results'] = maxResults
   }
 

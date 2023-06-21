@@ -12,8 +12,7 @@ export const extractor = response => {
 
 const getPostsFromResponse = response => {
   const feed = response.feed
-  const numberOfPosts = feed.openSearch$totalResults.$t
-  if (numberOfPosts !== '0') {
+  if (feed.entry) {
     return response.feed.entry
   } else {
     return []

@@ -8,7 +8,7 @@ import { internal } from './helpers/functions'
 (function () {
   const BloggerFetcher = function () {
     return {
-      VERSION: '1.0',
+      VERSION: '1.1',
       getPosts(config, callback) {
         if (!config) {
           config = {}
@@ -24,7 +24,9 @@ import { internal } from './helpers/functions'
           }
           callback({
             success,
-            data: success ? ExtractPostsDataFromResponse(data) : data
+            data: success ? (
+              config.dev ? data : ExtractPostsDataFromResponse(data)
+            ) : data
           })
         }, {
           feed: config.feed

@@ -1,6 +1,6 @@
 {
   "name": "blogger-fetcher",
-  "version": "1.0",
+  "version": "1.1",
   "description": "get Blogger posts with ease",
   "main": "src/index.js",
   "scripts": {

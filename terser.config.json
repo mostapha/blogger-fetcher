@@ -7,6 +7,6 @@
         "passes": 4
     },
     "format": {
-        "preamble": "/*\nBloggerFetcher (v1.0)\nhttps://github.com/mostapha/blogger-fetcher\nCopyright (c) 2023 Mustapha Bouh\nLicensed under the MIT license\n*/"
+        "preamble": "/*\nBloggerFetcher (v1.1)\nhttps://github.com/mostapha/blogger-fetcher\nCopyright (c) 2023 Mustapha Bouh\nLicensed under the MIT license\n*/"
     }
 }

@@ -25,7 +25,8 @@ const extractCategories = categories => {
 
 // extract postUrl
 const extractPostUrl = (links) => {
-  return links.filter(e => e.rel === 'alternate')[0].href
+  // Blogger domain uses related instead of alternate
+  return (links.filter(e => e.rel === 'alternate')[0] || links.filter(e => e.rel === 'related')[0]).href
 }
 
 // extract authors
